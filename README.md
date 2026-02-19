@@ -69,10 +69,9 @@ JSON Report Generation
 ```
 money-muling-detection/
 │
-├── app.py
-├── detection.py
-├── requirements.txt
-├── sample_data.csv
+├── app.py              # Main Streamlit app + all detection logic
+├── requirements.txt    # Python dependencies
+├── sample_data.csv     # Sample transaction CSV for testing
 ├── README.md
 └── .gitignore
 ```
@@ -156,6 +155,8 @@ T2,B,C,300,2025-02-01 11:00:00
 T3,C,A,200,2025-02-01 12:00:00
 ```
 
+A ready-to-use `sample_data.csv` is included in the repository for quick testing.
+
 ---
 
 ## ⚠️ Known Limitations
@@ -169,11 +170,10 @@ T3,C,A,200,2025-02-01 12:00:00
 
 ## 🚀 Future Improvements
 
-- Layered shell network detection
-- Temporal 72-hour window analysis
 - Machine learning fraud classification
-- False positive reduction model
+- False positive reduction model (merchant filtering)
 - Large dataset performance optimization
+- Real-time streaming transaction support
 
 ---
 
