@@ -1,10 +1,10 @@
-# Ignore Python cache files
+# Python cache files
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 
-# Ignore temporary files
+# Temporary files
 *.tmp
 *.temp
 *.log
@@ -12,18 +12,21 @@ __pycache__/
 *.swp
 *.swo
 
-# Ignore system files
+# System files
 .DS_Store
 Thumbs.db
 
-# Ignore library folders
+# Library folders (PyVis runtime assets)
 lib/
 
-# Ignore temporary files
+# Generated HTML output from PyVis
 *.html
-*.csv
-*.vcf
 
-# Ignore virtual environment
+# Virtual environment
 venv/
 .env/
+env/
+
+# IDE
+.vscode/
+.idea/
