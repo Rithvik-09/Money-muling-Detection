@@ -7,17 +7,11 @@ import json
 import time
 from datetime import timedelta
 
-# =========================
-# PAGE SETUP
-# =========================
 st.set_page_config(page_title="Money Muling Detector", layout="wide")
 st.title("💸 Money Muling Detection System")
 
 uploaded_file = st.file_uploader("Upload Transaction CSV", type=["csv"])
 
-# =========================
-# MAIN APP
-# =========================
 if uploaded_file:
 
     start_time = time.time()
@@ -32,9 +26,6 @@ if uploaded_file:
     st.subheader("📄 Transaction Data")
     st.dataframe(df)
 
-    # =========================
-    # BUILD GRAPH
-    # =========================
     G = nx.DiGraph()
 
     for _, r in df.iterrows():
